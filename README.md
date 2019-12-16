@@ -1,6 +1,7 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Decentra Tube
+Decentra Tube is a decentralized web application allowing users to view, share, and upload videos. Additionally, users can also create their own version of Decentra Tube by forking this repository and modifying the Gaia Hub to one of their own choosing. 
 
-## Available Scripts
+## Initial Setup
 
 In the project directory, you can run:
 
