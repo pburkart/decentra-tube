@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import Profile from './Profile.js';
 import Signin from './Signin.js';
 import Dashboard from './Dashboard.js';
+import Videos from './Videos.js';
 import {
   UserSession,
   AppConfig
@@ -29,8 +30,13 @@ export default class App extends Component {
         <div className="site-wrapper-inner">
           { !userSession.isUserSignedIn() ?
             <Signin userSession={userSession} handleSignIn={ this.handleSignIn } />
-            : <Dashboard userSession={userSession} handleSignOut={ this.handleSignOut } />
+            : <Dashboard userSession={userSession} handleSignOut={ this.handleSignOut }/>
           }
+          { !userSession.isUserSignedIn() ?
+            <a/>
+            :  <Videos userSession={userSession} handleSignOut={ this.handleSignOut } />
+          }
+
         </div>
       </div>
     );

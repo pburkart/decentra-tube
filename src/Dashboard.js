@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import './styles/style.css';
 
 export default class Dashboard extends Component {
 
